@@ -1,0 +1,25 @@
+﻿<Window x:Class="SaveEyes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaveEyes"
+        mc:Ignorable="d"
+        Title="SaveEyes" Height="650" Width="1200" MinHeight="500" MinWidth="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Frame Grid.Row="0" Grid.ColumnSpan="2" Background="#FFE9F9"/>
+            <Image Source="logo.png" Grid.Column="0" Width="60" Height="60"/>
+        </Grid>
+        <Frame x:Name="frame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
